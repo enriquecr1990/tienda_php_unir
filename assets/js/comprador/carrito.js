@@ -320,7 +320,7 @@ var Carrito = {
 
 var hostname = location.hostname;
 switch (hostname) {
-    case 'enriquecr-mx.info':
+    case 'tienda-php.enriquecr-mx.info':
         var Cecabank = {
             URL_OK : 'https://enriquecr-mx.info/tienda-php/pago_finalizado',
             URL_NOK : 'https://enriquecr-mx.info/tienda-php/pago_rechazado'
