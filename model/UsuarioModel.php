@@ -29,8 +29,20 @@ class UsuarioModel extends ModeloBase
             $this->msg[] = 'Existe un usuario '.$dataUsuario['usuario'].' registrado en el sistema, intente con otro distinto o inicie sesión en el sistema';
         }else {
             $this->db->insertarRegistro('usuario',$dataUsuario);
-            return $this->getUsuarioId($this->db->getUltimoIdInsertado());
+            $id_usuario_nuevo = $this->db->getUltimoIdInsertado();
+            return $this->getUsuarioId($id_usuario_nuevo);
         }
+    }
+
+    public function registrarDataUsuarioNuevo($idUsuario,$usuario){
+        $data_usuario['nombre'] = $usuario;
+        $data_usuario['paterno'] = 'paterno';
+        $data_usuario['materno'] = 'materno';
+        $data_usuario['genero'] = 'h';
+        $data_usuario['correo'] = 'ejemplo@correo.com';
+        $data_usuario['telefono'] = '1234569874';
+        $data_usuario['usuario_id'] = $idUsuario;
+        return $this->db->insertarRegistro('data_usuario',$data_usuario);
     }
 
     public function login($data){

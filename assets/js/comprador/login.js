@@ -29,11 +29,7 @@ $(document).ready(function(){
     $(document).on('click','#btn_registro_comprador',function(){
         Login.registrar_usuario();
     });
-
-    $(document).on('click','#btn_registro_comprador',function(){
-        Login.registrar_usuario();
-    });
-
+    
     $(document).on('click','.btn_modal_direccio',function(){
         var id_direccion = $(this).data('id_direccion');
         var direccion = {};

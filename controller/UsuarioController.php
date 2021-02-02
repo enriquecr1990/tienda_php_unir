@@ -20,8 +20,11 @@ class UsuarioController {
                 $data['tipo_usuario'] = 'comprador';
                 $usuarioNuevo = $this->usuarioModel->registrarUsuario($data);
                 if($usuarioNuevo){
+                    $this->usuarioModel->registrarDataUsuarioNuevo($usuarioNuevo->id,$data['usuario']);
                     $response['status'] = true;
                     $response['msg'][] = 'Se registro su cuenta con exito';
+                    $response['data']['usuario'] = $usuarioNuevo;
+                    $response['data']['data_usuario'] = $this->usuarioModel->getDataUsuario($data['usuario']);
                 }else{
                     $response['status'] = false;
                     $response['msg'] = $this->usuarioModel->getMsg();

@@ -1,4 +1,4 @@
-<div id="contenedor_mis_datos_comprador" style="display: none">;
+<div class="container" id="contenedor_mis_datos_comprador" style="display: none;">
     <div class="row">
         <div class="form-group col-lg-12">
             <div class="card">

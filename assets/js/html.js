@@ -353,8 +353,8 @@ var CodHTML = {
 
     tarjeta_direccion : function(direccion){
         var parse_direccion = ParseDatos.json_codificado(direccion);
-        var html = '' +
-            '<div class="col-lg-4 col-md-4 col-sm-6 mb-4">' +
+        var html = '<div class="row">' +
+            '<div class="form-group col-lg-4 col-md-4 col-sm-6 mb-4">' +
                 '<div class="card"">' +
                     '<div class="card-header">' +
                         '<div class="row">' +
@@ -372,7 +372,7 @@ var CodHTML = {
                         '</div>' +
                     '</div>' +
                 '</div>' +
-            '</div>';
+            '</div></div>';
         return html;
     },
 
