@@ -34,7 +34,7 @@ $(document).ready(function(){
     $(document).on('click','#btn_guardar_producto',function(){
         if(Productos.validar_formulario_producto()){
             Master.obtener_contenido_peticion_json(
-                'routes/productos?name=guardar',
+                'routes/productos.php?name=guardar',
                 Master.obtener_post_formulario('#form_producto'),
                 function(response_json){
                     if(response_json.status){
@@ -69,7 +69,7 @@ var Productos = {
     listado : function(paramentros){
         Master.spiner_procesando('#tbody_productos_admin');
         Master.obtener_contenido_peticion_json(
-            'routes/productos?name=listado',
+            'routes/productos.php?name=listado',
             paramentros,function(response_json){
                 if(response_json.status){
                     var registro_productos = CodHTML.listado_tabla(response_json.data);

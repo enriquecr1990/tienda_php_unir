@@ -10,7 +10,7 @@ var Compra = {
 
     listado : function(){
         Master.obtener_contenido_peticion_json(
-            'routes/usuario?name=compras_cliente',
+            'routes/usuario.php?name=compras_cliente',
             {id_usuario : $('#id_usuario_compras').val()},
             function(response_json){
                 if(response_json.status){
@@ -32,7 +32,7 @@ var Compra = {
         Master.mostrar_modal_bootstrap('#modal_ventas_productos',true);
         Master.spiner_procesando('#tbody_productos_venta');
         Master.obtener_contenido_peticion_json(
-            'routes/productos?name=productos_venta',{id_compra : id_compra},
+            'routes/productos.php?name=productos_venta',{id_compra : id_compra},
             function(response_json){
                 if(response_json.status){
                     var listado_productos = CodHTML.listado_productos_venta_admin(response_json.data);

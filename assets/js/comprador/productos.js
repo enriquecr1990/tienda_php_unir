@@ -9,7 +9,7 @@ var Productos = {
     listado : function(paramentros){
         Master.spiner_procesando('#contenedor_listado_productos');
         Master.obtener_contenido_peticion_json(
-            'routes/productos?name=listado',
+            'routes/productos.php?name=listado',
             paramentros,function(response_json){
                 if(response_json.status){
                     var tarjetas_productos = CodHTML.listado(response_json.data);

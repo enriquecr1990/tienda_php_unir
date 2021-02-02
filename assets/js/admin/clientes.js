@@ -29,7 +29,7 @@ var Clientes = {
     listado : function(parametros){
         Master.spiner_procesando('#tbody_clientes_admin');
         Master.obtener_contenido_peticion_json(
-            'routes/usuario?name=clientes',
+            'routes/usuario.php?name=clientes',
             parametros,function(response_json){
                 if(response_json.status){
                     var clientes = CodHTML.listado_clientes_admin(response_json.data);
@@ -48,7 +48,7 @@ var Clientes = {
         var cliente = ParseDatos.json_decodificado(btn.data('cliente'));
         $('#nombre_cliente_compras').html(cliente.nombre+' '+cliente.paterno+' '+cliente.materno);
         Master.obtener_contenido_peticion_json(
-            'routes/usuario?name=compras_cliente',
+            'routes/usuario.php?name=compras_cliente',
             {id_usuario : id_usuario_cliente},
             function(response_json){
                 if(response_json.status){
