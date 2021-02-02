@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="author" content="Enrique Corona Ricaño">
-    <meta name="description" content="Proyecto de integración para la certificación de MercadoPago Developers México">
-    <meta name="keywords" content="Enrique Corona Ricaño, Certificacion Mercado Pago Developers, Mercado Pago Mexico">
-
+    <meta name="description" content="Sistema en PHP para tienda en linea por entregable de actividad">
+    <meta name="keywords" content="Enrique Corona Ricaño, Maestria Unir, Dirección e ingenieria de sitios web">
+	
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/assets/framework/bootstrap45/css/bootstrap.min.css">
 
