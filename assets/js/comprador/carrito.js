@@ -322,8 +322,8 @@ var hostname = location.hostname;
 switch (hostname) {
     case 'tienda-php.enriquecr-mx.info':
         var Cecabank = {
-            URL_OK : 'https://enriquecr-mx.info/tienda-php/pago_finalizado',
-            URL_NOK : 'https://enriquecr-mx.info/tienda-php/pago_rechazado'
+            URL_OK : 'https://enriquecr-mx.info/tienda-php/pago_finalizado.php',
+            URL_NOK : 'https://enriquecr-mx.info/tienda-php/pago_rechazado.php'
         }
         break;
     default:
