@@ -17,7 +17,7 @@
                         <div class="card-header">
                             Detalle de compra
                         </div>
-                        <div class="card-body" id="">
+                        <div class="card-body">
                             <div id="card_body_mi_carrito_comprar">
                                 <table class="table table-striped">
                                     <tbody>

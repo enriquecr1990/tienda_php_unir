@@ -25,11 +25,11 @@
     </div>
 
     <!-- modal pago satisfactorio -->
-    <div class="modal fade" id="modal_pago_cecabank_rechazado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal_pago_cecabank_rechazado" tabindex="-1" aria-labelledby="modal_pago_cecabank_rechazadoLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Notificación de pago</h5>
+                    <h5 class="modal-title" id="modal_pago_cecabank_rechazadoLabel">Notificación de pago</h5>
                 </div>
                 <div class="modal-body">
                     <div class="alert alert-danger">

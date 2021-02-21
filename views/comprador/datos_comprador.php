@@ -69,11 +69,11 @@
 </div>
 
 <!-- Modal datos comprador-->
-<div class="modal fade" id="modal_form_datos_comprador" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal_form_datos_comprador" tabindex="-1" aria-labelledby="modal_form_datos_compradorLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Mis datos</h5>
+                <h5 class="modal-title" id="modal_form_datos_compradorLabel">Mis datos</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -90,11 +90,11 @@
 </div>
 
 <!-- Modal direcciones-->
-<div class="modal fade" id="modal_form_comprador_direccion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal_form_comprador_direccion" tabindex="-1" aria-labelledby="modal_form_comprador_direccionLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Domicilio</h5>
+                <h5 class="modal-title" id="modal_form_comprador_direccionLabel">Domicilio</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
