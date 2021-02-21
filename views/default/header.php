@@ -19,8 +19,7 @@
     <link href="/assets/framework/watnotif/css/bubble/watnotif.right-bottom-bubble.css" rel="stylesheet" type="text/css">
 
     <!-- css para el fileupload -->
-    <!--<link href="/assets/framework/fileinput/css/fileinput.css">-->
-    <link href="/assets/framework/fileupload/css/jquery.fileupload.css">
+    <link href="/assets/framework/fileupload/css/jquery.fileupload.css" rel="stylesheet">
 
     <title>Tienda UNIR v2</title>
     <!-- scritps para el pago -->
