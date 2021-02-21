@@ -51,12 +51,13 @@ var Catalogos = {
     },
 
     estados : function(destino,value = false){
+        var html_opt = '<option value="">--Seleccione--</option>';
         Master.obtener_contenido_peticion_json(
             'routes/catalogos.php?name=estados',{},
             function(response_json){
                 if(response_json.status){
-                    var html_opt = CodHTML.select_catalogo(response_json.data);
-                    $(destino).append(html_opt);
+                    html_opt += CodHTML.select_catalogo(response_json.data);
+                    $(destino).html(html_opt);
                     if(value){
                         $(destino).val(value);
                     }

@@ -64,7 +64,7 @@ var CodHTML = {
     row_html_foto : function(id,valor){
         var html_registro_foto = '<tr>' +
             '   <td>' +
-            '       <input class="form-control" placeholder="URL de la foto" data-rule-required="true" name="foto_galeria['+id+']" value="'+valor+'">' +
+            '       <input class="form-control foto_galeria" placeholder="URL de la foto" data-rule-required="true" name="foto_galeria['+id+']" value="'+valor+'">' +
             '   </td>' +
             '   <td class="text-center">' +
             '       <button type="button" class="btn btn-danger btn-sm btn_eliminar_registro"><i class="fa fa-trash"></i></button>' +
@@ -245,12 +245,13 @@ var CodHTML = {
 
     tarjeta_producto : function(producto){
         var url_img = '/assets/img/logo.png';
+        var row_codificado = ParseDatos.json_codificado(producto);
         if(producto.galeria_fotos.length > 0){
             url_img = producto.galeria_fotos[0].url_foto;
         }
         var html = '<div class="col-lg-3 col-md-3 col-sm-6 mb-4">' +
             '                            <div class="card"">' +
-            '                                <img src="'+url_img+'" class="card-img-top img-fluid" alt="'+producto.nombre+'">' +
+            '                                <img src="'+url_img+'" data-producto="'+row_codificado+'" class="card-img-top img-fluid img_detalle_producto" alt="'+producto.nombre+'">' +
             '                                <div class="card-body">' +
             '                                    <h5 class="card-title">'+producto.nombre+'</h5>' +
             '                                    <h5 class="card-title">$ '+CodHTML.precio_producto_moneda(producto.precio)+ ' '+ Carrito.moneda_select+'</h5>' +

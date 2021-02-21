@@ -8,7 +8,7 @@
     <meta name="author" content="Enrique Corona Ricaño">
     <meta name="description" content="Sistema en PHP para tienda en linea por entregable de actividad">
     <meta name="keywords" content="Enrique Corona Ricaño, Maestria Unir, Dirección e ingenieria de sitios web">
-	
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/assets/framework/bootstrap45/css/bootstrap.min.css">
 
@@ -17,6 +17,10 @@
 
     <!-- CSS para el plugin de las notificaciones del sistema -->
     <link href="/assets/framework/watnotif/css/bubble/watnotif.right-bottom-bubble.css" rel="stylesheet" type="text/css">
+
+    <!-- css para el fileupload -->
+    <!--<link href="/assets/framework/fileinput/css/fileinput.css">-->
+    <link href="/assets/framework/fileupload/css/jquery.fileupload.css">
 
     <title>Tienda UNIR v2</title>
     <!-- scritps para el pago -->

@@ -90,3 +90,7 @@ footer{
 li{
 	list-style: none;
 }
+
+.img_detalle_producto:hover{
+	cursor: pointer !important;
+}

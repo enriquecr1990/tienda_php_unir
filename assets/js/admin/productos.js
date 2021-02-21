@@ -61,6 +61,7 @@ $(document).ready(function(){
     });
 
     //Productos.listado({}); //se quita para poderlo procesar desde los links y de cuando se vaya a iniciar sesion con el administrador
+    Productos.carga_archivos_examinar();
 
 });
 
@@ -108,5 +109,38 @@ var Productos = {
         });
         $('#tbody_producto_galeria').html(rows_fotos);
     },
+
+    carga_archivos_examinar : function(){
+        var nombre_archivo;
+        $('.file_upload_galeria_producto').fileupload({
+            url : 'routes/uploads.php?name=imagenes',
+            dataType : 'json',
+            start : function(){
+                console.log('se inicio la carga de archivos');
+            },
+            add : function(e,data){
+                nombre_archivo = data.fileInput.val().replace("C:\\fakepath\\",""); //use to chrome
+                data.formData = {
+                    filename : nombre_archivo
+                };
+                data.submit();
+            },
+            done : function(e,data){
+                if(data.result.status){
+                    $('#btn_nueva_ruta_imagen').trigger('click');
+                    var rows = $('#tbody_producto_galeria').find('tr').length;
+                    var ultimo_row = $('#tbody_producto_galeria').find('tr')[rows-1];
+                    $(ultimo_row).find('input.foto_galeria').val(data.result.data.ruta);
+                    $(ultimo_row).find('input.foto_galeria').attr('readonly',true);
+                    Master.mensajes_operacion_sistema(['Se cargo la imagen '+data.result.data.archivo +' con exito'],'success');
+                }else{
+                    Master.mensajes_operacion_sistema(data.result.msg,'error');
+                }
+            },
+            error : function(){
+                Master.mensajes_operacion_sistema(['Ocurrio un error al cargar las imagenes'],'error');
+            }
+        });
+    }
 
 }
