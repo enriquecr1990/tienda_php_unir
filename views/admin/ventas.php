@@ -118,7 +118,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="mensajeria">Clave del producto</label>
+                        <label for="mensajeria">Mensajeria:</label>
                         <input type="text" class="form-control" id="mensajeria" name="mensajeria" placeholder="Mensajeria" data-rule-required="true">
                     </div>
                     <div class="form-group">

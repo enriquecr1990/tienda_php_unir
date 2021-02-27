@@ -2,13 +2,13 @@
     <div id="carreteProductos" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="/assets/img/slider/Diapositiva1.JPG" class="d-block w-100" alt="Promoción Balones">
+                <img src="<?=base_url()?>assets/img/slider/Diapositiva1.JPG" class="d-block w-100" alt="Promoción Balones">
             </div>
             <div class="carousel-item ">
-                <img src="/assets/img/slider/Diapositiva2.JPG" class="d-block w-100" alt="Promoción Ropa Deportiva">
+                <img src="<?=base_url()?>assets/img/slider/Diapositiva2.JPG" class="d-block w-100" alt="Promoción Ropa Deportiva">
             </div>
             <div class="carousel-item ">
-                <img src="/assets/img/slider/Diapositiva3.JPG" class="d-block w-100" alt="Promoción playeras">
+                <img src="<?=base_url()?>assets/img/slider/Diapositiva3.JPG" class="d-block w-100" alt="Promoción playeras">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carreteProductos" role="button" data-slide="prev">

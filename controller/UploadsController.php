@@ -1,5 +1,7 @@
 <?php
 
+include_once '../helpers/comun.php';
+
 class UploadsController{
 
     public function imagenes(){
@@ -17,7 +19,7 @@ class UploadsController{
                             $response['msg'][] = 'Se recibieron y cargaron con exito las imagenes';
                             $response['data'] = array(
                                 'archivo' => $file_bn,
-                                'ruta' => $dir_uploads_response.$file_bn
+                                'ruta' => base_url().$dir_uploads_response.$file_bn
                             );
                         }else{
                             $response['status'] = false;

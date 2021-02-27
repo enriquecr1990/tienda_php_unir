@@ -1,4 +1,4 @@
-<?php $sitio = 'comprador'; ?>
+<?php $sitio = 'comprador';include_once 'helpers/comun.php'; ?>
 <?php include_once 'views/default/header.php'; ?>
 
 <?php include_once 'views/comprador/menu_comprador.php'; ?>

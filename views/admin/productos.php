@@ -76,7 +76,8 @@
                     </div>
                     <div class="form-group">
                         <label for="descripcion">Descripción</label>
-                        <input type="text" class="form-control" id="descripcion" name="descripcion" placeholder="Decripción del producto" data-rule-required="true">
+                        <textarea class="form-control" id="descripcion" name="descripcion" placeholder="Decripción del producto" data-rule-required="true" rows="5"></textarea>
+                        <!--<input type="text" class="form-control" id="descripcion" name="descripcion" placeholder="Decripción del producto" data-rule-required="true">-->
                     </div>
                     <div class="form-group">
                         <label for="tipo_producto">Tipo de producto</label>
@@ -110,18 +111,20 @@
                     </div>
                     <div class="form-group">
                         <div class="row">
+                            <div class="form-group col-lg-6"></div>
                             <div class="form-group col-lg-6">
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input file_upload_galeria_producto" name="foto_galeria_upload" id="customFile">
-                                    <label class="custom-file-label" for="customFile">Desde archivo</label>
+                                    <label class="custom-file-label" for="customFile">Subir Imagen</label>
                                 </div>
                             </div>
                         </div>
+                        <hr>
                         <table class="table table-striped">
                             <thead>
-                            <th>URL imagen</th>
+                            <th>Imagenes</th>
                             <th class="text-right">
-                                <button type="button" id="btn_nueva_ruta_imagen" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Nueva foto URL</button>
+                                <!--<button type="button" id="btn_nueva_ruta_imagen" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Nueva foto URL</button>-->
                             </th>
                             </thead>
                             <tbody id="tbody_producto_galeria">

@@ -2,3 +2,6 @@
 .idea
 /vendor
 *.lock
+*.png
+*.jpg
+*.jpeg

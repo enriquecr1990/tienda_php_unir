@@ -64,7 +64,7 @@ var CodHTML = {
     row_html_foto : function(id,valor){
         var html_registro_foto = '<tr>' +
             '   <td>' +
-            '       <input class="form-control foto_galeria" placeholder="URL de la foto" data-rule-required="true" name="foto_galeria['+id+']" value="'+valor+'">' +
+            '       <input class="form-control foto_galeria" readonly="readonly" placeholder="URL de la foto" data-rule-required="true" name="foto_galeria['+id+']" value="'+valor+'">' +
             '   </td>' +
             '   <td class="text-center">' +
             '       <button type="button" class="btn btn-danger btn-sm btn_eliminar_registro"><i class="fa fa-trash"></i></button>' +
@@ -141,8 +141,8 @@ var CodHTML = {
             '<td>$'+compra.monto+'</td>' +
             '<td>'+compra.moneda+'</td>' +
             '<td>' +
-                '<li>Mensajeria: <span class="badge badge-danger">'+compra.mensajeria+'</span></li>' +
-                '<li>Número de guía/Código de rastreo: <span class="badge badge-dark">'+compra.numero_guia+'</span></li>'
+                '<li>Mensajeria: <span class="badge badge-danger">'+CodHTML.valor_campo(compra.mensajeria)+'</span></li>' +
+                '<li>Número de guía/Código de rastreo: <span class="badge badge-dark">'+CodHTML.valor_campo(compra.numero_guia)+'</span></li>'
                 +html_estatus+'' +
             '</td>' +
             '</tr>';
@@ -191,8 +191,8 @@ var CodHTML = {
                 '<td>$'+venta.monto+'</td>' +
                 '<td>'+venta.moneda+'</td>' +
                 '<td>' +
-                    '<li>Mensajeria: <span class="badge badge-danger">'+venta.mensajeria+'</span></li>' +
-                    '<li>Número de guía/Código de rastreo: <span class="badge badge-dark">'+venta.numero_guia+'</span></li>'
+                    '<li>Mensajeria: <span class="badge badge-danger">'+CodHTML.valor_campo(venta.mensajeria)+'</span></li>' +
+                    '<li>Número de guía/Código de rastreo: <span class="badge badge-dark">'+CodHTML.valor_campo(venta.numero_guia)+'</span></li>'
                     +html_estatus+'' +
                 '</td>' +
                 '<td>' +
@@ -255,7 +255,7 @@ var CodHTML = {
             '                                <div class="card-body">' +
             '                                    <h5 class="card-title">'+producto.nombre+'</h5>' +
             '                                    <h5 class="card-title">$ '+CodHTML.precio_producto_moneda(producto.precio)+ ' '+ Carrito.moneda_select+'</h5>' +
-            '                                    <p class="card-text">'+producto.descripcion+'</p>' +
+            '                                    <p class="card-text">'+producto.descripcion.substring(0,100)+'...</p>' +
             '                                    <button type="button" data-id_producto="'+producto.id+'" class="btn btn-sm btn-success agregar_producto_cesta">Agregar<i class="fa fa-shopping-cart"></i></button>' +
             '                                </div>' +
             '                            </div>' +
@@ -429,8 +429,8 @@ var CodHTML = {
             '<td>$'+venta.monto+'</td>' +
             '<td>'+venta.moneda+'</td>' +
             '<td>' +
-            '<li>Mensajeria: <span class="badge badge-danger">'+venta.mensajeria+'</span></li>' +
-            '<li>Número de guía/Código de rastreo: <span class="badge badge-dark">'+venta.numero_guia+'</span></li>'
+            '<li>Mensajeria: <span class="badge badge-danger">'+CodHTML.valor_campo(venta.mensajeria)+'</span></li>' +
+            '<li>Número de guía/Código de rastreo: <span class="badge badge-dark">'+CodHTML.valor_campo(venta.numero_guia)+'</span></li>'
             +html_estatus+'' +
             '</td>' +
             '<td>' +
@@ -439,5 +439,12 @@ var CodHTML = {
             '</tr>';
         return html;
     },
+
+    valor_campo : function(valor){
+        if(valor == null){
+            valor = 'Sin registro';
+        }
+        return valor;
+    }
 
 }

@@ -1,4 +1,7 @@
-<?php $sitio = 'admin'; ?>
+<?php
+    $sitio = 'admin';
+    include_once 'helpers/comun.php';
+?>
 <?php include_once 'views/default/header.php'; ?>
 
 <?php include_once 'views/admin/menu_admin.php'; ?>
