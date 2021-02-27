@@ -8,6 +8,7 @@ class ConfigDB {
         // switch de $_SERVER['SERVER_NAME'] para cargar la configuracion de la
         // BD para que funcione en local o en la nube
         switch ($_SERVER['SERVER_NAME']){
+            case 'enriquecr-mx.info':
             case 'tienda-php.enriquecr-mx.info':
                 $db_config['host'] = 'localhost';
                 $db_config['port'] = '3306';
