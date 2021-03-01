@@ -14,7 +14,7 @@
                             <small id="busquedaHelpCliente" class="form-text text-muted">Describa un texto del cliente incluyendo mayúsculas, de enter o salga del recuadro</small>
                         </div>
                         <div class="form-group col-lg-2">
-                            <label for="busqueda_genero">Genero</label>
+                            <label for="busqueda_genero_clientes">Genero</label>
                             <select class="custom-select clientes_filtro" name="busqueda_genero_clientes" id="busqueda_genero_clientes">
                                 <option value="">--Todos--</option>
                                 <option value="h">Caballero</option>

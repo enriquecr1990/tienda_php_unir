@@ -18,8 +18,8 @@
                             <input class="form-control ventas_filtro" type="date" id="busqueda_fecha_ventas" placeholder="Fecha de compra">
                         </div>
                         <div class="form-group col-lg-2">
-                            <label for="busqueda_genero_clientes">Genero</label>
-                            <select class="custom-select ventas_filtro" name="busqueda_genero_ventas" id="busqueda_genero_clientes">
+                            <label for="busqueda_genero_ventas">Genero</label>
+                            <select class="custom-select ventas_filtro" name="busqueda_genero_ventas" id="busqueda_genero_ventas">
                                 <option value="">--Todos--</option>
                                 <option value="h">Caballero</option>
                                 <option value="m">Dama</option>
