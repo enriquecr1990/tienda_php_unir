@@ -102,7 +102,7 @@ var CodHTML = {
                 '<td>' +
                     'Compras totales: <span class="badge badge-primary">' + cliente.ventas_totales+ '</span><br>'+
                     'Carrito activo: <span class="badge badge-success">'+ cliente.carrito_activo+'</span> <br>'+
-                    '<button type="button" class="btn btn-success btn-sm btn_cliente_ventas" data-id_usuario="'+cliente.usuario_id+'" data-cliente="'+cliente_codificado+'"><i class="fa fa-eye"> Compras</i></button>'+
+                    '<button type="button" class="btn btn-success btn-sm btn_cliente_ventas" data-id_usuario="'+cliente.usuario_id+'" data-cliente="'+cliente_codificado+'"><em class="fa fa-eye"> Compras</em></button>'+
                 '</td>' +
             '</tr>';
         return html;
@@ -167,7 +167,7 @@ var CodHTML = {
     registro_venta_admin : function(venta){
         var venta_codificado = ParseDatos.json_codificado(venta);
         var html_estatus = '';
-        var btn_actualizar_venta = '<button type="button" class="btn btn-danger btn-sm btn_actualizar_venta mt-1" data-id_compra="'+venta.id+'" data-venta="'+venta_codificado+'"><i class="fa fa-file"></i>Actualizar venta</button>';
+        var btn_actualizar_venta = '<button type="button" class="btn btn-danger btn-sm btn_actualizar_venta mt-1" data-id_compra="'+venta.id+'" data-venta="'+venta_codificado+'"><em class="fa fa-file"></em>Actualizar venta</button>';
         if(venta.historia_estatus != undefined && venta.historia_estatus.length > 0){
             $.each(venta.historia_estatus,function(index,estatus){
                 var color_badge = '';
@@ -196,7 +196,7 @@ var CodHTML = {
                     +html_estatus+'' +
                 '</td>' +
                 '<td>' +
-                    '<button type="button" class="btn btn-info btn-sm btn_productos_ventas" data-id_compra="'+venta.id+'" data-venta="'+venta_codificado+'"><i class="fa fa-eye"></i>Ver productos</button>' +
+                    '<button type="button" class="btn btn-info btn-sm btn_productos_ventas" data-id_compra="'+venta.id+'" data-venta="'+venta_codificado+'"><em class="fa fa-eye"></em>Ver productos</button>' +
                     '' + btn_actualizar_venta +
                 '</td>' +
             '</tr>';
@@ -256,7 +256,7 @@ var CodHTML = {
             '                                    <h5 class="card-title">'+producto.nombre+'</h5>' +
             '                                    <h5 class="card-title">$ '+CodHTML.precio_producto_moneda(producto.precio)+ ' '+ Carrito.moneda_select+'</h5>' +
             '                                    <p class="card-text">'+producto.descripcion.substring(0,100)+'...</p>' +
-            '                                    <button type="button" data-id_producto="'+producto.id+'" class="btn btn-sm btn-success agregar_producto_cesta">Agregar<i class="fa fa-shopping-cart"></i></button>' +
+            '                                    <button type="button" data-id_producto="'+producto.id+'" class="btn btn-sm btn-success agregar_producto_cesta">Agregar<em class="fa fa-shopping-cart"></em></button>' +
             '                                </div>' +
             '                            </div>' +
             '                        </div>';
@@ -312,13 +312,13 @@ var CodHTML = {
                         '<div class="row">' +
                             '<div class="form-group col-lg-8">' +
                                 '<div class="input-group mb-3">' +
-                                    '<div class="input-group-prepend"><button type="button" class="btn btn-secondary btn-sm btn_quitar_producto" data-id_producto="'+producto.id+'"><i class="fa fa-minus"></i></button></div>' +
+                                    '<div class="input-group-prepend"><button type="button" class="btn btn-secondary btn-sm btn_quitar_producto" data-id_producto="'+producto.id+'"><em class="fa fa-minus"></em></button></div>' +
                                     '<input type="text" class="form-control add_numero_productos text-center" value="'+producto.cantidad_carrito+'" readonly="readonly">' +
-                                    '<div class="input-group-append"><button type="button" class="btn btn-secondary btn-sm btn_add_producto" data-id_producto="'+producto.id+'"><i class="fa fa-plus"></i></button></div>' +
+                                    '<div class="input-group-append"><button type="button" class="btn btn-secondary btn-sm btn_add_producto" data-id_producto="'+producto.id+'"><em class="fa fa-plus"></em></button></div>' +
                                 '</div>' +
                             '</div>' +
                             '<div class="form-group col-lg-4">' +
-                                '<button type="button" class="btn btn-sm btn-danger btn_eliminar_producto" data-id_producto="'+producto.id+'"><i class="fa fa-trash"></i></button>' +
+                                '<button type="button" class="btn btn-sm btn-danger btn_eliminar_producto" data-id_producto="'+producto.id+'"><em class="fa fa-trash"></em></button>' +
                             '</div>' +
                         '</div>' +
                     '</div>' +
@@ -368,7 +368,7 @@ var CodHTML = {
                         '<li><strong>Referencias: </strong>'+direccion.referencias+'</li>' +
                         '<div class="row">' +
                             '<div class="form-group col-lg-12 text-right">' +
-                                '<button type="button" data-id_direccion="'+direccion.id+'" data-direccion="'+parse_direccion+'" class="btn btn-sm btn-success btn_modal_direccio">Modificar <i class="fa fa-edit"></i></button>' +
+                                '<button type="button" data-id_direccion="'+direccion.id+'" data-direccion="'+parse_direccion+'" class="btn btn-sm btn-success btn_modal_direccio">Modificar <em class="fa fa-edit"></em></button>' +
                             '</div>' +
                         '</div>' +
                     '</div>' +
@@ -434,7 +434,7 @@ var CodHTML = {
             +html_estatus+'' +
             '</td>' +
             '<td>' +
-            '<button type="button" class="btn btn-info btn-sm btn_productos_compras" data-id_compra="'+venta.id+'" data-venta="'+venta_codificado+'"><i class="fa fa-eye"></i>Ver productos</button>' +
+            '<button type="button" class="btn btn-info btn-sm btn_productos_compras" data-id_compra="'+venta.id+'" data-venta="'+venta_codificado+'"><em class="fa fa-eye"></em>Ver productos</button>' +
             '</td>' +
             '</tr>';
         return html;

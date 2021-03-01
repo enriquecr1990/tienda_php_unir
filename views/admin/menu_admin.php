@@ -20,7 +20,7 @@
             </ul>
             <ul class="navbar-nav mr-5" id="menu_admin_login">
                 <li class="nav-item" id="lnk_msg_sistema" style="display: none;">
-                    <span class="nav-link active">Bienvenido <i id="nombre_usuario_login"></i></span>
+                    <span class="nav-link active">Bienvenido <em id="nombre_usuario_login"></em></span>
                 </li>
                 <li class="nav-item" id="lnk_cerrar_sesion" style="display: none">
                     <span class="nav-link active">Cerrar sesión</span>

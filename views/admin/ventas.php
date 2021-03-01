@@ -128,7 +128,7 @@
                         <input type="text" class="form-control" id="numero_guia" name="numero_guia" placeholder="Número de guía" data-rule-required="true" data-rule-number="true">
                     </div>
                     <div class="form-group">
-                        <label for="numero_guia">Estatus</label>
+                        <label for="cat_compra_estatus_id">Estatus</label>
                         <select class="custom-select" data-rule-required="true" name="cat_compra_estatus_id" id="cat_compra_estatus_id">
                             <option value="">--Seleccione--</option>
                         </select>
