@@ -21,6 +21,7 @@ class CarritoController{
             $cesta->subtotal = 0;
             $cesta->impuesto = 0;
             $cesta->total = 0;
+            $cesta->envio = 0;
             $cesta->productos = array();
             //validamos si existe la sesión del usuario para poder almacenar en la BD el carrito
             if(isset($_SESSION['data_usuario_comprador']) && is_object($_SESSION['data_usuario_comprador'])){

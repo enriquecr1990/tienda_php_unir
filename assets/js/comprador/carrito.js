@@ -168,10 +168,10 @@ var Carrito = {
                     $('#card_body_mi_carrito_comprados').html(productos_carrito);
                     if(response_json.data.total_productos > 0){
                         $('#bdg_carrito').html(response_json.data.total_productos);
-                        $('#btn_pagar_compra').fadeIn();
+                        $('#btn_pagar_proceso_compra').fadeIn();
                     }else{
                         $('#bdg_carrito').html('');
-                        $('#btn_pagar_compra').fadeOut();
+                        $('#btn_pagar_proceso_compra').fadeOut();
                     }
                     Carrito.validar_input_add_productos();
                     $('#URL_OK').val(Cecabank.URL_OK);
