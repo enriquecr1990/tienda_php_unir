@@ -10,9 +10,9 @@
             </div>
             <div class="modal-body text-justify">
 
-                <h4>Forma de envío</h4>
+                <strong>Forma de envío</strong>
 
-                <h6>Resumen</h6>
+                <h5>Resumen</h5>
 
                 Creamos el lugar más conveniente para artículos deportivos en México. Un aspecto esencial es asegurar
                 que tu pedido llegue a tiempo y en perfectas condiciones con un costo de logística justo para el
@@ -28,8 +28,8 @@
                     <li>En todo momento el estatus de tu envío se puede consultar en línea a través de un número de guía.</li>
                 </ul>
 
-                <h4>Formas y tiempos de entrega</h4>
-                <h6>Envío estándar</h6>
+                <strong>Formas y tiempos de entrega</strong>
+                <h5>Envío estándar</h5>
 
                 El tiempo de entrega por mensajería varía dependiendo del destino y cuenta con un plazo de entrega de 1
                 a 4 días hábiles. Todos los envíos se realizan una vez que se haya recibido el importe total de la

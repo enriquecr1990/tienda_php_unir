@@ -9,7 +9,7 @@
                     <div class="row">
                         <div class="form-group col-lg-6"></div>
                         <div class="form-group col-lg-4">
-                            <label for="busqueda_detalle">Filtro</label>
+                            <label for="busqueda_detalle_clientes">Filtro</label>
                             <input class="form-control clientes_filtro" id="busqueda_detalle_clientes" placeholder="Nombre, apellidos, datos de contacto">
                             <small id="busquedaHelpCliente" class="form-text text-muted">Describa un texto del cliente incluyendo mayúsculas, de enter o salga del recuadro</small>
                         </div>
@@ -22,7 +22,7 @@
                             </select>
                         </div>
                     </div>
-                    <table class="table table-striped">
+                    <table class="table table-striped" summary="Tabla de datos de clientes">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-lg-12">
-                        <table class="table table-striped">
+                        <table class="table table-striped" summary="Tabla de datos para las compras del cliente">
                             <thead>
                             <th>Fecha</th>
                             <th>Monto</th>

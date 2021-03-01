@@ -7,7 +7,7 @@
                     Mis compras
                 </div>
                 <div class="card-body" >
-                    <table class="table table-striped">
+                    <table class="table table-striped" summary="Tabla de productos que contiene el resumen de mis compras">
                         <thead>
                         <tr>
                             <th>#</th>
@@ -53,7 +53,7 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-lg-12">
-                        <table class="table table-striped">
+                        <table class="table table-striped" summary="tabla de productos que estan a la venta">
                             <thead>
                             <tr>
                                 <th>Clave</th>

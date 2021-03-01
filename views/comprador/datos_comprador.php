@@ -8,7 +8,7 @@
                             Mis datos personales
                         </div>
                         <div class="col-lg-6 text-right">
-                            <button type="button" class="btn btn-dark btn-sm" id="btn_actualizar_datos_comprador"><i class="fa fa-edit"></i> Actualizar</button>
+                            <button type="button" class="btn btn-dark btn-sm" id="btn_actualizar_datos_comprador"><em class="fa fa-edit"></em> Actualizar</button>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                             Mis direcciones
                         </div>
                         <div class="col-lg-6 text-right">
-                            <button type="button" class="btn btn-dark btn-sm btn_modal_direccio" data-id_direccion="" data-direccion=""><i class="fa fa-plus"></i> Agregar</button>
+                            <button type="button" class="btn btn-dark btn-sm btn_modal_direccio" data-id_direccion="" data-direccion=""><em class="fa fa-plus"></em> Agregar</button>
                         </div>
                     </div>
                 </div>

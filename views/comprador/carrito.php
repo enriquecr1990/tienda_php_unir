@@ -19,7 +19,7 @@
                         </div>
                         <div class="card-body">
                             <div id="card_body_mi_carrito_comprar">
-                                <table class="table table-striped">
+                                <table class="table table-striped" summary="Desgloce de los costos de todos los productos agregados al carrito">
                                     <tbody>
                                     <tr>
                                         <td class="text-left">Subtotal:</td>
@@ -40,7 +40,7 @@
                                     </tbody>
                                 </table>
                                 <div class="text-center">
-                                    <button id="btn_pagar_proceso_compra" type="button" class="btn btn-success">PAGAR <i class="fa fa-money-bill"></i></button>
+                                    <button id="btn_pagar_proceso_compra" type="button" class="btn btn-success">PAGAR <em class="fa fa-money-bill"></em></button>
                                 </div>
                             </div>
                             <hr>

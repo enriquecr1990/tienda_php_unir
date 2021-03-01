@@ -11,7 +11,7 @@
                     </div>
                     <div class="form-group">
                         <label for="password">Contraseña</label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" data-rule-required="true">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" data-rule-required="true" />
                     </div>
                     <div class="form-group">
                         <div class="custom-control custom-checkbox">

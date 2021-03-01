@@ -22,7 +22,7 @@ $(document).ready(function(){
             '<h5 class="card-title">'+producto.nombre+'</h5>' +
         '<h5 class="card-title">$ '+CodHTML.precio_producto_moneda(producto.precio)+ ' '+ Carrito.moneda_select+'</h5>' +
         '<p class="card-text">'+producto.descripcion+'</p>' +
-        '<button type="button" data-id_producto="'+producto.id+'" class="btn btn-sm btn-success agregar_producto_cesta">Agregar<i class="fa fa-shopping-cart"></i></button>';
+        '<button type="button" data-id_producto="'+producto.id+'" class="btn btn-sm btn-success agregar_producto_cesta">Agregar<em class="fa fa-shopping-cart"></em></button>';
         $('#fotosCarreteDetProd').html(html_carrete_prods);
         $('#detalleProducto').html(detalleProd);
         Master.mostrar_modal_bootstrap('#modal_producto_comprador',true);

@@ -16,7 +16,7 @@
             <input type="text" class="form-control" id="numero_int" name="numero_int" placeholder="Número interior">
         </div>
         <div class="form-group col-lg-4">
-            <label for="calle">Código postal</label>
+            <label for="codigo_postal">Código postal</label>
             <input type="text" class="form-control" id="codigo_postal" name="codigo_postal" placeholder="Código postal" data-rule-required="true">
         </div>
     </div>

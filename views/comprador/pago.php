@@ -61,7 +61,7 @@
                                     Enviar pedido a:
                                 </div>
                                 <div class="col-lg-6 text-right">
-                                    <button type="button" class="btn btn-dark btn-sm btn_modal_direccio" data-id_direccion="" data-direccion=""><i class="fa fa-plus"></i> Agregar</button>
+                                    <button type="button" class="btn btn-dark btn-sm btn_modal_direccio" data-id_direccion="" data-direccion=""><em class="fa fa-plus"></em> Agregar</button>
                                 </div>
                             </div>
                         </div>

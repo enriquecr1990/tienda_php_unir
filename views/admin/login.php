@@ -22,7 +22,7 @@
                         </div>
                     </div>
                     <div class="form-group text-center">
-                        <button type="button" class="btn btn-success" id="btn_login_admin"><i class="fa fa-sign-in"></i>Iniciar sesión</button>
+                        <button type="button" class="btn btn-success" id="btn_login_admin"><em class="fa fa-sign-in"></em>Iniciar sesión</button>
                     </div>
                 </form>
             </div>

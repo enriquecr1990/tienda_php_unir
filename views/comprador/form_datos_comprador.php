@@ -13,7 +13,9 @@
         <input type="text" class="form-control" id="materno_cliente" name="materno" placeholder="Apellido materno">
     </div>
     <div class="form-group">
-        <label>Genero</label>
+        <fieldset>
+            <legend class="custom-control-label">Genero</legend>
+        </fieldset>
         <div class="custom-control custom-radio">
             <input type="radio" id="genero_hombre_cliente" name="genero" class="custom-control-input" value="h" data-rule-required="true">
             <label class="custom-control-label" for="genero_hombre_cliente">Hombre</label>

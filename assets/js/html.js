@@ -41,8 +41,8 @@ var CodHTML = {
             '<td>' +imgs+ '</td>' +
             '<td>'+producto.tipo_producto+'</td>' +
             '<td>' +
-            '    <button type="button" class="btn btn-warning btn-sm btn_modificar_producto" data-producto="'+row_codificado+'"><i class="fa fa-pen"></i></button><br>' +
-            '    <button type="button" class="btn btn-danger btn-sm" data-id_producto="'+producto.id+'" ><i class="fa fa-trash"></i></button>' +
+            '    <button type="button" class="btn btn-warning btn-sm btn_modificar_producto" data-producto="'+row_codificado+'"><em class="fa fa-pen"></em></button><br>' +
+            '    <button type="button" class="btn btn-danger btn-sm" data-id_producto="'+producto.id+'" ><em class="fa fa-trash"></em></button>' +
             '</td>' +
             '</tr>';
         return html;
@@ -67,7 +67,7 @@ var CodHTML = {
             '       <input class="form-control foto_galeria" readonly="readonly" placeholder="URL de la foto" data-rule-required="true" name="foto_galeria['+id+']" value="'+valor+'">' +
             '   </td>' +
             '   <td class="text-center">' +
-            '       <button type="button" class="btn btn-danger btn-sm btn_eliminar_registro"><i class="fa fa-trash"></i></button>' +
+            '       <button type="button" class="btn btn-danger btn-sm btn_eliminar_registro"><em class="fa fa-trash"></em></button>' +
             '   </td>' +
             '</tr>';
         return html_registro_foto;

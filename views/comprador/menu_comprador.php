@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <img src="<?=base_url()?>assets/img/logo_ecr.png" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">
+        <img src="<?=base_url()?>assets/img/logo_ecr.png" width="50" height="50" class="d-inline-block align-top" alt="Mi tienda UNIR MX v2" loading="lazy">
         <a class="navbar-brand" href="#">Tienda UNIR v2</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuTiendaEcommerse" aria-controls="menuTiendaEcommerse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -46,9 +46,9 @@
                         <i class="fas fa-user"></i>
                     </a>
                     <div class="dropdown-menu" id="menu_comprador_login" aria-labelledby="menu_comprador">
-                        <a role="button" class="dropdown-item" id="lnk_mis_compras"><i class="fa fa-shopping-bag"></i> Mis Compras</a>
-                        <a role="button" class="dropdown-item" id="lnk_datos_comprador" ><i class="fa fa-id-card"></i> Mis datos</a>
-                        <a role="button" class="dropdown-item" id="lnk_loguout_comprador" ><i class="fa fa-sign-out-alt"></i> Salir</a>
+                        <a role="button" class="dropdown-item" id="lnk_mis_compras"><em class="fa fa-shopping-bag"></em> Mis Compras</a>
+                        <a role="button" class="dropdown-item" id="lnk_datos_comprador" ><em class="fa fa-id-card"></em> Mis datos</a>
+                        <a role="button" class="dropdown-item" id="lnk_loguout_comprador" ><em class="fa fa-sign-out-alt"></em> Salir</a>
                     </div>
                 </li>
                 <li class="nav-item" id="msg_logeado_comprador">

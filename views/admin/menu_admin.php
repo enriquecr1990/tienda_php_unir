@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <img src="<?=base_url()?>assets/img/logo_ecr.png" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">
+        <img src="<?=base_url()?>assets/img/logo_ecr.png" width="50" height="50" class="d-inline-block align-top" alt="Mi tienda UNIR MX v2" loading="lazy">
         <a class="navbar-brand" href="#">Tienda UNIR v2</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu_admin_tienda_unir" aria-controls="menuTiendaEcommerse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

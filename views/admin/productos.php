@@ -30,7 +30,7 @@
                             </select>
                         </div>
                     </div>
-                    <table class="table table-striped">
+                    <table class="table table-striped" summary="Tabla de datos para los registros de productos">
                         <thead>
                             <tr>
                                 <th>Clave</th>
@@ -40,7 +40,7 @@
                                 <th>Galeria</th>
                                 <th>Categoria</th>
                                 <th >
-                                    <button type="button" id="btn_agregar_producto" class="btn btn-outline-success btn-sm"><i class="fa fa-plus"></i> Nuevo</button>
+                                    <button type="button" id="btn_agregar_producto" class="btn btn-outline-success btn-sm"><em class="fa fa-plus"></em> Nuevo</button>
                                 </th>
                             </tr>
                         </thead>
@@ -120,7 +120,7 @@
                             </div>
                         </div>
                         <hr>
-                        <table class="table table-striped">
+                        <table class="table table-striped" summary="Tabla de datos para las imagenes de un producto">
                             <thead>
                             <th>Imagenes</th>
                             <th class="text-right">

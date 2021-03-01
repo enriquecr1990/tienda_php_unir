@@ -9,16 +9,16 @@
                     <div class="row">
                         <div class="form-group col-lg-4"></div>
                         <div class="form-group col-lg-4">
-                            <label for="busqueda_detalle">Filtro</label>
+                            <label for="busqueda_detalle_ventas">Filtro</label>
                             <input class="form-control ventas_filtro" id="busqueda_detalle_ventas" placeholder="Nombre, apellidos, datos de contacto">
                             <small id="busquedaHelpVentas" class="form-text text-muted">Describa un texto del cliente incluyendo mayúsculas, de enter o salga del recuadro</small>
                         </div>
                         <div class="form-group col-lg-2">
-                            <label for="busqueda_detalle">Fecha</label>
+                            <label for="busqueda_fecha_ventas">Fecha</label>
                             <input class="form-control ventas_filtro" type="date" id="busqueda_fecha_ventas" placeholder="Fecha de compra">
                         </div>
                         <div class="form-group col-lg-2">
-                            <label for="busqueda_genero">Genero</label>
+                            <label for="busqueda_genero_clientes">Genero</label>
                             <select class="custom-select ventas_filtro" name="busqueda_genero_ventas" id="busqueda_genero_clientes">
                                 <option value="">--Todos--</option>
                                 <option value="h">Caballero</option>
@@ -26,7 +26,7 @@
                             </select>
                         </div>
                     </div>
-                    <table class="table table-striped">
+                    <table class="table table-striped" summary="Tabla de datos para mostrar las ventas desde el administrador">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-lg-12">
-                        <table class="table table-striped">
+                        <table class="table table-striped" summary="Tabla de datos para mostrar los productos vendidos">
                             <thead>
                             <tr>
                                 <th>Clave</th>
