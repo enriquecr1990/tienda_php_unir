@@ -1,6 +1,7 @@
 .git
 .idea
 /vendor
+/assets/uploads
 *.lock
 *.png
 *.jpg
