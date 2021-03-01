@@ -104,8 +104,8 @@ $(document).ready(function(){
         },7000);
     }
 
-    //Carrito.valor_dollar_peso_mexicano(true);
-    //Carrito.valor_dollar_euro(true);
+    Carrito.valor_dollar_peso_mexicano(true);
+    Carrito.valor_dollar_euro(true);
 
 });
 
