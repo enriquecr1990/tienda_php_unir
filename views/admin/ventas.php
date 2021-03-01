@@ -26,7 +26,8 @@
                             </select>
                         </div>
                     </div>
-                    <table class="table table-striped" summary="Tabla de datos para mostrar las ventas desde el administrador">
+                    <table class="table table-striped" >
+                        <caption>Tabla de datos para mostrar las ventas desde el administrador</caption>
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -73,7 +74,8 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-lg-12">
-                        <table class="table table-striped" summary="Tabla de datos para mostrar los productos vendidos">
+                        <table class="table table-striped">
+                            <caption>Tabla de datos para mostrar los productos vendidos</caption>
                             <thead>
                             <tr>
                                 <th>Clave</th>

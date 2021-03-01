@@ -15,15 +15,17 @@
     <div class="form-group">
         <fieldset>
             <legend class="custom-control-label">Genero</legend>
+            <p>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="genero_hombre_cliente" name="genero" class="custom-control-input" value="h" data-rule-required="true">
+                    <label class="custom-control-label" for="genero_hombre_cliente">Hombre</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="genero_mujer_cliente" name="genero" class="custom-control-input" value="m">
+                    <label class="custom-control-label" for="genero_mujer_cliente">Mujer</label>
+                </div>
+            </p>
         </fieldset>
-        <div class="custom-control custom-radio">
-            <input type="radio" id="genero_hombre_cliente" name="genero" class="custom-control-input" value="h" data-rule-required="true">
-            <label class="custom-control-label" for="genero_hombre_cliente">Hombre</label>
-        </div>
-        <div class="custom-control custom-radio">
-            <input type="radio" id="genero_mujer_cliente" name="genero" class="custom-control-input" value="m">
-            <label class="custom-control-label" for="genero_mujer_cliente">Mujer</label>
-        </div>
     </div>
     <div class="form-group">
         <label for="correo_cliente">Correo electronico</label>

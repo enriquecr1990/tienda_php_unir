@@ -22,7 +22,8 @@
                             </select>
                         </div>
                     </div>
-                    <table class="table table-striped" summary="Tabla de datos de clientes">
+                    <table class="table table-striped" >
+                        <caption>Tabla de datos de clientes</caption>
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -59,12 +60,15 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-lg-12">
-                        <table class="table table-striped" summary="Tabla de datos para las compras del cliente">
+                        <table class="table table-striped" >
+                            <caption>Tabla de datos para las compras del cliente</caption>
                             <thead>
+                            <tr>
                             <th>Fecha</th>
                             <th>Monto</th>
                             <th>Moneda de pago</th>
                             <th>Estatus</th>
+                            </tr>
                             </thead>
                             <tbody id="tbody_compras_cliente">
 

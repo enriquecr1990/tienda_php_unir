@@ -19,7 +19,7 @@
                         </div>
                         <div class="card-body">
                             <div id="card_body_mi_carrito_comprar">
-                                <table class="table table-striped" summary="Desgloce de los costos de todos los productos agregados al carrito">
+                                <table class="table table-striped">
                                     <tbody>
                                     <tr>
                                         <td class="text-left">Subtotal:</td>

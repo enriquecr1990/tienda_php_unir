@@ -30,7 +30,8 @@
                             </select>
                         </div>
                     </div>
-                    <table class="table table-striped" summary="Tabla de datos para los registros de productos">
+                    <table class="table table-striped">
+                        <caption>Tabla de datos para los registros de productos</caption>
                         <thead>
                             <tr>
                                 <th>Clave</th>
@@ -120,12 +121,13 @@
                             </div>
                         </div>
                         <hr>
-                        <table class="table table-striped" summary="Tabla de datos para las imagenes de un producto">
+                        <table class="table table-striped" >
+                            <caption>Tabla de datos para las imagenes de un producto</caption>
                             <thead>
-                            <th>Imagenes</th>
-                            <th class="text-right">
-                                <!--<button type="button" id="btn_nueva_ruta_imagen" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Nueva foto URL</button>-->
-                            </th>
+                            <tr>
+                                <th>Imagenes</th>
+                                <th class="text-right">&nbsp;</th>
+                            </tr>
                             </thead>
                             <tbody id="tbody_producto_galeria">
 

@@ -30,7 +30,7 @@
             <ul class="navbar-nav mr-5">
                 <li class="nav-item dropdown" id="menu_comprador_moneda">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-money-check-alt"></i>Moneda: <span id="moneda_select_pago">MXN</span>
+                        <em class="fas fa-money-check-alt"></em>Moneda: <span id="moneda_select_pago">MXN</span>
                     </a>
                     <div class="dropdown-menu" id="menu_comprador_moneda_opciones" aria-labelledby="menu_comprador_moneda">
                         <a role="button" class="dropdown-item moneda_opcion" data-valor_moneda="MXN" >Peso mexicano - MXN</a>
@@ -43,7 +43,7 @@
                 </li>
                 <li class="nav-item dropdown" id="menu_comprador">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-user"></i>
+                        <em class="fas fa-user"></em>
                     </a>
                     <div class="dropdown-menu" id="menu_comprador_login" aria-labelledby="menu_comprador">
                         <a role="button" class="dropdown-item" id="lnk_mis_compras"><em class="fa fa-shopping-bag"></em> Mis Compras</a>
@@ -52,11 +52,11 @@
                     </div>
                 </li>
                 <li class="nav-item" id="msg_logeado_comprador">
-                    <span class="nav-link active">Bienvenido <i id="nombre_comprador_login"></i></span>
+                    <span class="nav-link active">Bienvenido <em id="nombre_comprador_login"></em></span>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link cursor_pointer" id="lnk_carrito_comprador">
-                        <i class="fas fa-shopping-cart"></i>
+                        <em class="fas fa-shopping-cart"></em>
                         <span id="bdg_carrito" class="badge badge-danger badge_notificacion"></span>
                     </a>
                 </li>
