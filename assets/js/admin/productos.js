@@ -14,6 +14,8 @@ $(document).ready(function(){
         $('.is-valid').removeClass('is-valid');
         $('.is-invalid').removeClass('is-invalid');
         $('.error ').remove();
+        $('#tbody_producto_galeria').html('');
+        $('#id').val(0);
         Master.mostrar_modal_bootstrap('#modal_productos',true);
     });
 
