@@ -65,7 +65,7 @@
                 </button>
             </div>
             <form id="form_producto" enctype="multipart/form-data">
-                <input type="hidden" id="id" name="id">
+                <input type="hidden" id="id" name="id" value="0">
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="clave">Clave del producto</label>
@@ -126,7 +126,9 @@
                             <thead>
                             <tr>
                                 <th>Imagenes</th>
-                                <th class="text-right">&nbsp;</th>
+                                <th class="text-right">&nbsp;
+                                    <button type="button" id="btn_nueva_ruta_imagen" style="display: none">Nueva foto</button>
+                                </th>
                             </tr>
                             </thead>
                             <tbody id="tbody_producto_galeria">

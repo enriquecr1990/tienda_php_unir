@@ -29,6 +29,7 @@ class DB
             if($this->mysqli->connect_errno){
                 echo "Fallo al conectar a MySQL: (" . $this->mysqli->connect_errno . ") " . $this->mysqli->connect_error;die;
             }
+            $this->mysqli->set_charset('utf8');
         }catch (Exception $ex){
             echo 'Error en el constructor Modelo base';exit;
         }
@@ -63,6 +64,7 @@ class DB
             $valores = $llavesValores['valores'];
             //creamos el sql para el insert
             $insert = "INSERT INTO $tabla($llaves) VALUES($valores)";
+            //var_dump($insert);exit;
             $this->sentencia = $this->mysqli->query($insert);
             return $this->getUltimoIdInsertado();
         }catch (Exception $ex){

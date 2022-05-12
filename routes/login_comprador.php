@@ -1,6 +1,6 @@
 <?php
-session_start();
 session_cache_expire(30); //expirar la sesion en 30 minutos
+session_start();
 require_once '../controller/LoginCompradorController.php';
 
 $loginComprador = new LoginCompradorController();

@@ -1,6 +1,8 @@
 <?php
-session_start();
+mb_internal_encoding("UTF-8");
+
 session_cache_expire(30); //expirar la sesion en 30 minutos
+session_start();
 require_once '../controller/LoginAdminController.php';
 
 $loginAdmin = new LoginAdminController();

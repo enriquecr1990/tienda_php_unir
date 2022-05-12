@@ -1,5 +1,7 @@
 <?php
 
+mb_internal_encoding("UTF-8");
+
 require_once '../helpers/validaciones.php';
 require_once '../model/UsuarioModel.php';
 
@@ -54,6 +56,7 @@ class LoginAdminController {
             $response['status'] = false;
             $response['msg'] = 'No es posible iniciar sesión en este momento';
         }
+        //var_dump($response);exit;
         echo json_encode($response);
     }
 

@@ -35,7 +35,7 @@
 <?php endif; ?>
 
 <footer>
-    Enrique Corona Ricaño Estudiante de Maestria en UNIR
+    Enrique Corona Ricaño - Maestria en UNIR 2022
 </footer>
 
 </body>
