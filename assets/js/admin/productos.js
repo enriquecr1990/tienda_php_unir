@@ -36,7 +36,7 @@ $(document).ready(function(){
     $(document).on('click','#btn_guardar_producto',function(){
         if(Productos.validar_formulario_producto()){
             Master.obtener_contenido_peticion_json(
-                'routes/productos.php?name=guardar',
+                base_url + 'routes/productos.php?name=guardar',
                 Master.obtener_post_formulario('#form_producto'),
                 function(response_json){
                     if(response_json.status){
@@ -72,7 +72,7 @@ var Productos = {
     listado : function(paramentros){
         Master.spiner_procesando('#tbody_productos_admin');
         Master.obtener_contenido_peticion_json(
-            'routes/productos.php?name=listado',
+            base_url + 'routes/productos.php?name=listado',
             paramentros,function(response_json){
                 if(response_json.status){
                     var registro_productos = CodHTML.listado_tabla(response_json.data);
@@ -115,7 +115,7 @@ var Productos = {
     carga_archivos_examinar : function(){
         var nombre_archivo;
         $('.file_upload_galeria_producto').fileupload({
-            url : 'routes/uploads.php?name=imagenes',
+            url : base_url + 'routes/uploads.php?name=imagenes',
             dataType : 'json',
             start : function(){
                 console.log('se inicio la carga de archivos');

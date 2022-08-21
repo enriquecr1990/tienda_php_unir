@@ -23,7 +23,7 @@ var Catalogos = {
 
     tipo_producto : function(){
         Master.obtener_contenido_peticion_json(
-            'routes/catalogos.php?name=tipo_producto',{},
+            base_url + 'routes/catalogos.php?name=tipo_producto',{},
             function(response_json){
                 if(response_json.status){
                     var html_opt = CodHTML.select_catalogo(response_json.data);
@@ -38,7 +38,7 @@ var Catalogos = {
 
     estatus_compra : function(){
         Master.obtener_contenido_peticion_json(
-            'routes/catalogos.php?name=estatus_compra',{},
+            base_url + 'routes/catalogos.php?name=estatus_compra',{},
             function(response_json){
                 if(response_json.status){
                     var html_opt = CodHTML.select_catalogo(response_json.data);
@@ -53,7 +53,7 @@ var Catalogos = {
     estados : function(destino,value = false){
         var html_opt = '<option value="">--Seleccione--</option>';
         Master.obtener_contenido_peticion_json(
-            'routes/catalogos.php?name=estados',{},
+            base_url + 'routes/catalogos.php?name=estados',{},
             function(response_json){
                 if(response_json.status){
                     html_opt += CodHTML.select_catalogo(response_json.data);
@@ -71,7 +71,7 @@ var Catalogos = {
     municipios : function(id_estado,destino,value = false){
         var opt_mun = '<option value="">--Seleccione--</option>';
         Master.obtener_contenido_peticion_json(
-            'routes/catalogos.php?name=municipios&id_search='+id_estado,{},
+            base_url + 'routes/catalogos.php?name=municipios&id_search='+id_estado,{},
             function(response_json){
                 if(response_json.status){
                     opt_mun += CodHTML.select_catalogo(response_json.data);
@@ -89,7 +89,7 @@ var Catalogos = {
     localidades : function(id_municipio,destino,value = false){
         var opt_loc = '<option value="">--Seleccione--</option>';
         Master.obtener_contenido_peticion_json(
-            'routes/catalogos.php?name=localidades&id_search='+id_municipio,{},
+            base_url + 'routes/catalogos.php?name=localidades&id_search='+id_municipio,{},
             function(response_json){
                 if(response_json.status){
                     opt_loc += CodHTML.select_catalogo(response_json.data);

@@ -71,7 +71,7 @@ var Login = {
 
     validar : function(){
         Master.obtener_contenido_peticion_json(
-            'routes/login_comprador.php?name=valida_login',{},
+            base_url + 'routes/login_comprador.php?name=valida_login',{},
             function(response_json){
                 if(response_json.status){
                     $('#lnk_login_comprador').fadeOut();
@@ -109,7 +109,7 @@ var Login = {
                 tipo_usuario : 'comprador'
             };
             Master.obtener_contenido_peticion_json(
-                'routes/login_comprador.php?name=login',
+                base_url + 'routes/login_comprador.php?name=login',
                 data_login,
                 function(response_json){
                     if(!response_json.status){
@@ -128,7 +128,7 @@ var Login = {
 
     cerrar_session : function () {
         Master.obtener_contenido_peticion_json(
-            'routes/login_comprador.php?name=logout',{},
+            base_url + 'routes/login_comprador.php?name=logout',{},
             function(response_json){
                 Login.validar();
                 $('#menu_inicio').trigger('click');
@@ -145,7 +145,7 @@ var Login = {
                 tipo_usuario : 'comprador'
             };
             Master.obtener_contenido_peticion_json(
-                'routes/usuario.php?name=registro_comprador',
+                base_url + 'routes/usuario.php?name=registro_comprador',
                 data_login,
                 function(response_json){
                     if(response_json.status){
@@ -197,14 +197,14 @@ var Login = {
     actualizar_mis_datos_comprador : function(){
         if(Login.validar_form_mis_datos_comprador()){
             Master.obtener_contenido_peticion_json(
-                'routes/login_comprador.php?name=actualizar_comprador',
+                base_url + 'routes/login_comprador.php?name=actualizar_comprador',
                 Master.obtener_post_formulario('#form_mis_datos'),
                 function(response_json){
                     if(response_json.status){
                         Master.mostrar_modal_bootstrap('#modal_form_datos_comprador',false);
                         Master.mensajes_operacion_sistema(response_json.msg);
                         Master.obtener_contenido_peticion_json(
-                            'routes/login_comprador.php?name=valida_login',{},
+                            base_url + 'routes/login_comprador.php?name=valida_login',{},
                             function(response_json){
                                 if(response_json.status){
                                     if(response_json.data){
@@ -260,7 +260,7 @@ var Direcciones = {
 
     listado : function(id_data_usuario){
         Master.obtener_contenido_peticion_json(
-            'routes/usuario.php?name=obtener_direcciones',
+            base_url + 'routes/usuario.php?name=obtener_direcciones',
             {id_data_usuario : id_data_usuario},
             function(response_json){
                 if(response_json.status){
@@ -278,7 +278,7 @@ var Direcciones = {
     registrar : function(){
         if(Direcciones.validar_formulario_direccion()){
             Master.obtener_contenido_peticion_json(
-                'routes/usuario.php?name=agregar_direccion',
+                base_url + 'routes/usuario.php?name=agregar_direccion',
                 Master.obtener_post_formulario('#form_direccion_usuario'),
                 function(response){
                     if(response.status){
@@ -296,7 +296,7 @@ var Direcciones = {
     actualizar : function(){
         if(Direcciones.validar_formulario_direccion()){
             Master.obtener_contenido_peticion_json(
-                'routes/usuario.php?name=actualizar_direccion',
+                base_url + 'routes/usuario.php?name=actualizar_direccion',
                 Master.obtener_post_formulario('#form_direccion_usuario'),
                 function(response){
                     if(response.status){
@@ -313,7 +313,7 @@ var Direcciones = {
 
     eliminar : function (id_direccion){
         Master.obtener_contenido_peticion_json(
-            'routes/usuario.php?name=eliminar_direccion',
+            base_url + 'routes/usuario.php?name=eliminar_direccion',
             {id_direccion : id_direccion},
             function(response){
                 if(response.status){

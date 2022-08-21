@@ -29,7 +29,7 @@ var Login = {
 
     validar : function(){
         Master.obtener_contenido_peticion_json(
-            'routes/login_admin.php?name=valida_login',{},
+            base_url + 'routes/login_admin.php?name=valida_login',{},
             function(response_json){
                 if(response_json.status){
                     $('#lnk_cerrar_sesion').fadeIn();
@@ -60,7 +60,7 @@ var Login = {
                 tipo_usuario : 'admin'
             };
             Master.obtener_contenido_peticion_json(
-                'routes/login_admin.php?name=login',
+                base_url + 'routes/login_admin.php?name=login',
                 data_login,
                 function(response_json){
                     if(!response_json.status){
@@ -78,7 +78,7 @@ var Login = {
 
     cerrar_session : function () {
         Master.obtener_contenido_peticion_json(
-            'routes/login_admin.php?name=logout',{},
+            base_url + 'routes/login_admin.php?name=logout',{},
             function(response_json){
                 Login.validar();
                 Master.mensajes_operacion_sistema(response_json.msg);

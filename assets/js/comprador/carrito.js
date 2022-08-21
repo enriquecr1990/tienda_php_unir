@@ -42,7 +42,7 @@ $(document).ready(function(){
 
     $(document).on('click','#btn_pagar_proceso_compra',function(){
         Master.obtener_contenido_peticion_json(
-            'routes/login_comprador.php?name=valida_login',{},
+            base_url +  'routes/login_comprador.php?name=valida_login',{},
             function(response_json){
                 if(response_json.status){
                     $('#contenedor_proceso_pago_invitado').fadeOut();
@@ -64,7 +64,7 @@ $(document).ready(function(){
             moneda : Carrito.moneda_select,
         }
         Master.obtener_contenido_peticion_json(
-            'routes/carrito.php?name=preparar_sesion_compra',paramentros,
+            base_url + 'routes/carrito.php?name=preparar_sesion_compra',paramentros,
             function(response_json){
                 if(!response_json.status){
                     Master.mensajes_operacion_sistema(response_json.msg,'error');
@@ -82,7 +82,7 @@ $(document).ready(function(){
         Master.mostrar_modal_bootstrap('#modal_pago_cecabank_finalizado',true);
         //pagado
         Master.obtener_contenido_peticion_json(
-            'routes/carrito.php?name=actualizar_compra',{estatus_id : 1},
+            base_url + 'routes/carrito.php?name=actualizar_compra',{estatus_id : 1},
             function(response_json){
 
             },'post'
@@ -94,7 +94,7 @@ $(document).ready(function(){
         Master.mostrar_modal_bootstrap('#modal_pago_cecabank_rechazado',true);
         //pago rechazado
         Master.obtener_contenido_peticion_json(
-            'routes/carrito.php?name=actualizar_compra',{estatus_id : 5},
+            base_url + 'routes/carrito.php?name=actualizar_compra',{estatus_id : 5},
             function(response_json){
 
             },'post'
@@ -139,7 +139,7 @@ var Carrito = {
 
     num_productos_cesta : function(){
         Master.obtener_contenido_peticion_json(
-            'routes/carrito.php?name=productos_cesta',{},
+            base_url + 'routes/carrito.php?name=productos_cesta',{},
             function (response_json) {
                 if(response_json.status){
                     if(response_json.data.total_productos > 0){
@@ -157,7 +157,7 @@ var Carrito = {
     carrito_cesta_detalle : function(){
         Master.spiner_procesando('#card_body_mi_carrito_comprados');
         Master.obtener_contenido_peticion_json(
-            'routes/carrito.php?name=productos_cesta',{},
+            base_url + 'routes/carrito.php?name=productos_cesta',{},
             function (response_json) {
                 if(response_json.status){
                     var productos_carrito = CodHTML.productos_cesta_detalle(response_json.data.productos);
@@ -195,7 +195,7 @@ var Carrito = {
         };
         //datos que se procesesan en el banckend
         Master.obtener_contenido_peticion_json(
-            'routes/carrito.php?name=preparar_comprar_pago',
+            base_url + 'routes/carrito.php?name=preparar_comprar_pago',
             paramentros,
             function(response_json){
                 if(response_json.status){
@@ -218,7 +218,7 @@ var Carrito = {
             cantidad : cantidad
         };
         Master.obtener_contenido_peticion_json(
-            'routes/carrito.php?name=agregar_producto',parametros,
+            base_url+ 'routes/carrito.php?name=agregar_producto',parametros,
             function(response_json){
                 if(response_json.status){
                     Master.mensajes_operacion_sistema(response_json.msg,'success');
@@ -232,7 +232,7 @@ var Carrito = {
 
     eliminar_product_cesta : function(id_producto){
         Master.obtener_contenido_peticion_json(
-            'routes/carrito.php?name=eliminar_producto', {producto_id : id_producto},
+            base_url + 'routes/carrito.php?name=eliminar_producto', {producto_id : id_producto},
             function(response_json){
                 if(response_json.status){
                     Master.mensajes_operacion_sistema(response_json.msg,'success');

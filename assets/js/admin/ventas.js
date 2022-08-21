@@ -37,7 +37,7 @@ var Ventas = {
     listado : function(parametros){
         Master.spiner_procesando('#tbody_ventas_admin');
         Master.obtener_contenido_peticion_json(
-            'routes/productos.php?name=ventas',parametros,
+            base_url + 'routes/productos.php?name=ventas',parametros,
             function(response_json){
                 if(response_json.status){
                     var listado_ventas = CodHTML.listado_ventas_admin(response_json.data);
@@ -58,7 +58,7 @@ var Ventas = {
         Master.mostrar_modal_bootstrap('#modal_ventas_productos',true);
         Master.spiner_procesando('#tbody_productos_venta');
         Master.obtener_contenido_peticion_json(
-            'routes/productos.php?name=productos_venta',{id_compra : id_compra},
+            base_url + 'routes/productos.php?name=productos_venta',{id_compra : id_compra},
             function(response_json){
                 if(response_json.status){
                     var listado_productos = CodHTML.listado_productos_venta_admin(response_json.data);
@@ -88,7 +88,7 @@ var Ventas = {
     guardar_actualizar_venta : function(){
         if(Ventas.validar_form_actualizar_venta()){
             Master.obtener_contenido_peticion_json(
-                'routes/productos.php?name=actualizar_venta',
+                base_url + 'routes/productos.php?name=actualizar_venta',
                 Master.obtener_post_formulario('#actualizar_venta'),
                 function(response_json){
                     if(response_json.status){
